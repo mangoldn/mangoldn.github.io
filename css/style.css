@@ -892,8 +892,7 @@ MEDIA QUERIES
 		text-align: center;
 		font-size: 13px;
 		width: 80%;
-		margin-left: 0;
-		margin-right: 0;
+		margin: auto;
 	}
 	.lightbox .description_box:nth-of-type(1) img {
 	    top: 136px;
