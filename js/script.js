@@ -14,6 +14,13 @@ var burger = $('.burger');
     });
 
 
+$("#read_more").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#slider2").offset().top
+    }, 1000);
+});
+
+
 'use strict';
 
 
