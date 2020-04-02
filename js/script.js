@@ -20,7 +20,7 @@ var burger = $('.burger');
 $(function() {    // SLIDER 1
 
     // Reloading page when window resizing is finished
-    if ($(window).width() > 700) { // But not for smartphone, because it's fucked up
+    if ($(window).width() > 490) { // But not for smartphone, because it's fucked up
         
         var id;
         $(window).resize(function() {
@@ -72,11 +72,11 @@ $(function() {    // SLIDER 1
     function pauseSlider() {
         clearInterval(interval);
     }
-
-    $(window).resize(function() {
-        $('.slides').css("visibility", "hidden");
-    });
-
+    if ($(window).width() > 490) { // But not for smartphone, because it's fucked up
+            $(window).resize(function() {
+                $('.slides').css("visibility", "hidden");
+            });
+    }
     // Start pause slider mouse hover
 
     $slideContainer
@@ -228,11 +228,11 @@ $(function() {    // SLIDER 2
     function pauseSlider2() {
         clearInterval(interval);
     }
-
-    $(window).resize(function() {
-        $('.slides2').css("visibility", "hidden");
-    });
-
+    if ($(window).width() > 490) { // But not for smartphone, because it's fucked up
+        $(window).resize(function() {
+            $('.slides2').css("visibility", "hidden");
+        });
+    }
     // Start pause slider mouse hover
 
     $slideContainer2
