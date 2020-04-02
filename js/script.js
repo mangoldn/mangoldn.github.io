@@ -20,15 +20,19 @@ var burger = $('.burger');
 $(function() {    // SLIDER 1
 
     // Reloading page when window resizing is finished
-    var id;
-    $(window).resize(function() {
+    if ($(window).width() > 700) { // But not for smartphone, because it's fucked up
+        
+        var id;
+        $(window).resize(function() {
         clearTimeout(id);
         id = setTimeout(doneResizing, 1000);
-    });
-    function doneResizing(){
-        location.reload();
-    };
-
+        });
+        
+        function doneResizing(){
+            location.reload();
+        };
+    }
+    
     //settings for slider
     var animationSpeed = 1000;
     var pause = 6000;
