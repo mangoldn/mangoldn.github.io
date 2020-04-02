@@ -212,6 +212,7 @@ header .logo_menu .menu {
 
 .burger.active span:nth-child(2) {
 	opacity: 0;
+	-webkit-opacity: 0;
 	left: -100%;
 }
 
@@ -406,6 +407,7 @@ button.light:active {
     left: -192px;
     z-index: -1;
     opacity: 2%;
+    -webkit-opacity: 0.02;
     font-size: 2000%;
     user-select: none;
 }
@@ -436,6 +438,7 @@ button.light:active {
     right: 30px;
     z-index: -3;
     opacity: 10%;
+    -webkit-opacity: 0.1;
     mix-blend-mode: soft-light;
 }
 
@@ -446,6 +449,7 @@ button.light:active {
     right: 30px;
     z-index: -3;
     opacity: 10%;
+    -webkit-opacity: 0.1;
     mix-blend-mode: soft-light;
 }
 
@@ -454,6 +458,7 @@ button.light:active {
     z-index: -3;
     width: 870px;
     opacity: 3%;
+    -webkit-opacity: 0.03;
     right: -540px;
     bottom: -350px;
 	}
